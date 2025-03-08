@@ -1,8 +1,20 @@
-import express, { Request, Response } from 'express';
+import { AppDataSource } from './database/conexion';
 import app from './app';
 
 
+async function main() {
+    try {
+        await AppDataSource.initialize();
+        console.log('Base de datos Conectada')
+        app.listen(3001, () => {
+            console.log('Server is running on port 3001');
+        });
+    } catch (error) {
+        if (error instanceof Error) {
+            console.log(error.message)
+        }
 
+    }
+}
 
-
-
+main();
