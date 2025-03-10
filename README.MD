@@ -5,7 +5,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.x-orange)
 ![JWT](https://img.shields.io/badge/JWT-Authentication-yellow)
 
-Este es un sistema de gestión de biblioteca desarrollado con **Node.js**, **Express.js** y **PostgreSQL**. Permite gestionar libros, préstamos, devoluciones y notificaciones de préstamos vencidos. Además, incluye autenticación basada en roles para distinguir entre usuarios normales y administradores.
+Este es un sistema de gestión de biblioteca desarrollado con **Node.js**, **Express.js** y **PostgreSQL**. Permite gestionar libros, préstamos y usuarios . Además, incluye autenticación basada en roles para distinguir entre usuarios normales y administradores.
 
 ---
 
@@ -14,7 +14,6 @@ Este es un sistema de gestión de biblioteca desarrollado con **Node.js**, **Exp
 - **Gestión de Libros**: Registrar, actualizar, eliminar y buscar libros.
 - **Préstamos y Devoluciones**: Los usuarios pueden tomar prestados libros y devolverlos.
 - **Autenticación y Autorización**: Distinción entre usuarios normales y administradores.
-- **Notificaciones**: Alertas sobre préstamos vencidos.
 - **Documentación de la API**: Disponible en Swagger.
 
 ---

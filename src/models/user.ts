@@ -10,7 +10,7 @@ export class User {
     nombre: String
 
     @Column()
-    contrasena: String
+    password: String
 
     @Column()
     edad: Number
