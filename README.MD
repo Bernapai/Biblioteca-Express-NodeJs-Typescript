@@ -13,8 +13,7 @@ Este es un sistema de gestión de biblioteca desarrollado con **Node.js**, **Exp
 
 - **Gestión de Libros**: Registrar, actualizar, eliminar y buscar libros.
 - **Préstamos y Devoluciones**: Los usuarios pueden tomar prestados libros y devolverlos.
-- **Autenticación y Autorización**: Distinción entre usuarios normales y administradores.
-- **Documentación de la API**: Disponible en Swagger.
+- **Autenticación y Autorización**: Distinción entre usuarios normales y autenticados.
 
 ---
 
@@ -24,7 +23,7 @@ Este es un sistema de gestión de biblioteca desarrollado con **Node.js**, **Exp
 - **Base de Datos**: PostgreSQL
 - **Autenticación**: JWT (JSON Web Tokens)
 - **Validación**: `class-validator`
-- **Documentación**: Swagger
+
 
 ---
 
