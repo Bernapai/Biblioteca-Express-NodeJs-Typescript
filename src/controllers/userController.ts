@@ -22,7 +22,7 @@ class userController {
         }
     }
 
-    async login(req: Request, res: Response) {
+    async login(req: Request, res: Response): Promise<void> {
         try {
             const { nombre, password } = req.body;
 
@@ -30,7 +30,8 @@ class userController {
             const user = await this.UserRepository.findOneBy({ nombre, password });
 
             if (!user) {
-                return res.status(401).json({ error: "Credenciales incorrectas" });
+                res.status(401).json({ error: "Credenciales incorrectas" });
+                return;
             }
 
             // Generar token

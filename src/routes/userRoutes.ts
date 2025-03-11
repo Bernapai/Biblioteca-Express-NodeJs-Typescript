@@ -1,18 +1,13 @@
-import express from "express";
-import userController from "../controllers/userController";
-import { verificarToken } from "../middlewares/authMiddleware";
+import { Router } from 'express';
+import userController from '../controllers/userController';
 
-
-const router = express.Router();
-const controller = new userController
-
+const router = Router();
+const userCtrl = new userController();
 
 // Ruta para registrar un usuario
-router.post('/register', controller.register);
+router.post('/register', userCtrl.register);
 
-// Ruta para iniciar sesión (login) de un usuario
-router.post('/login', controller.login);
-
-
+// Ruta para iniciar sesión
+router.post('/login', userCtrl.login);
 
 export default router;
